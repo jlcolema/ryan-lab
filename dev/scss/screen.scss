@@ -54,3 +54,32 @@
 // Notes...
 
 // @import "layouts/footer";
+
+
+@import "enfold/custom";
+@import "enfold/grid";
+@import "enfold/base";
+@import "enfold/layout";
+@import "enfold/shortcodes";
+
+// style
+// custom
+// grid
+// base
+// layout
+// shortcodes
+// print
+// rtl
+
+
+/*Add your own styles here:*/
+
+.av-masonry-date { display: none; }
+.post-meta-infos  { display: none; }
+.blog-categories { display: none; }
+.av-magazine-time { display: none; }
+.news-time { display: none!important; }
+.slide-meta-comments  { display: none!important; }
+.slide-meta-del  { display: none!important; }
+.slide-meta { display: none!important; }
+

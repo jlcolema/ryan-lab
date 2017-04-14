@@ -57,7 +57,7 @@ gulp.task('sass', function() {
 
 	}))
 
-	.pipe(gulp.dest(basePaths.root))
+	.pipe(gulp.dest(basePaths.dest + 'css'))
 
 	.pipe(browsersync.stream());
 
