@@ -65,25 +65,25 @@ add_action('ava_after_main_container', 'after_head_image_func');
 			'colorset-header_color-bg'              => '#ffffff',
 
 			// Alternate background color
-			'colorset-header_color-bg2'             => '#f8f8f8',
+			'colorset-header_color-bg2'             => '#ffffff',
 
 			// Primary color
-			'colorset-header_color-primary'         => '#2d5c88',
+			'colorset-header_color-primary'         => '#1b79b7',
 
 			// Hightlight color
-			'colorset-header_color-secondary'       => '#444444',
+			'colorset-header_color-secondary'       => '#1b79b7',
 
 			// Font color
-			'colorset-header_color-color'           => '#333333',
+			'colorset-header_color-color'           => '#000000',
 
 			// Secondary font color
-			'colorset-header_color-meta'            => '#808080',
+			'colorset-header_color-meta'            => '#000000',
 
 			// Heading color
 			'colorset-header_color-heading'         => '#000000',
 
 			// Border color
-			'colorset-header_color-border'          => '#e1e1e1',
+			'colorset-header_color-border'          => '#ffffff',
 
 			// Background image
 			'colorset-header_color-img'             => '',
@@ -107,25 +107,25 @@ add_action('ava_after_main_container', 'after_head_image_func');
 			'colorset-main_color-bg'                => '#ffffff',
 
 			// Alternate background color
-			'colorset-main_color-bg2'               => '#fcfcfc',
+			'colorset-main_color-bg2'               => '#ffffff',
 
 			// Primary color
-			'colorset-main_color-primary'           => '#2d5c88',
+			'colorset-main_color-primary'           => '#1b79b7',
 
 			// Highlight color
-			'colorset-main_color-secondary'         => '#3d71a1',
+			'colorset-main_color-secondary'         => '#1b79b7',
 
 			// Font color
-			'colorset-main_color-color'             => '#666666',
+			'colorset-main_color-color'             => '#000000',
 
 			// Secondary font color
-			'colorset-main_color-meta'              => '#919191',
+			'colorset-main_color-meta'              => '#000000',
 
 			// Heading color
-			'colorset-main_color-heading'           => '#222222',
+			'colorset-main_color-heading'           => '#000000',
 
 			// Border color
-			'colorset-main_color-border'            => '#e1e1e1',
+			'colorset-main_color-border'            => '#ffffff',
 
 			// Background image
 			'colorset-main_color-img'               => '',
@@ -147,28 +147,28 @@ add_action('ava_after_main_container', 'after_head_image_func');
 			--------------------------------------*/
 
 			// Background color
-			'colorset-alternate_color-bg'           => '#fcfcfc',
+			'colorset-alternate_color-bg'           => '#ffffff',
 
 			// Alternate background color
 			'colorset-alternate_color-bg2'          => '#ffffff',
 
 			// Primary color
-			'colorset-alternate_color-primary'      => '#2d5c88',
+			'colorset-alternate_color-primary'      => '#1b79b7',
 
 			// Highlight color
-			'colorset-alternate_color-secondary'    => '#3d71a1',
+			'colorset-alternate_color-secondary'    => '#1b79b7',
 
 			// Font color
-			'colorset-alternate_color-color'        => '#666666',
+			'colorset-alternate_color-color'        => '#000000',
 
 			// Secondary font color
-			'colorset-alternate_color-meta'         => '#8f8f8f',
+			'colorset-alternate_color-meta'         => '#000000',
 
 			// Heading color
-			'colorset-alternate_color-heading'      => '#222222',
+			'colorset-alternate_color-heading'      => '#000000',
 
 			// Border color
-			'colorset-alternate_color-border'       => '#e1e1e1',
+			'colorset-alternate_color-border'       => '#ffffff',
 
 			// Background image
 			'colorset-alternate_color-img'          => '',
@@ -189,28 +189,28 @@ add_action('ava_after_main_container', 'after_head_image_func');
 			--------------------------------------*/
 
 			// Background color
-			'colorset-footer_color-bg'              => '#222222', // $primary-color
+			'colorset-footer_color-bg'              => '#1b79b7', // $primary-color
 
 			// Alternate background color
-			'colorset-footer_color-bg2'             => '#333333',
+			'colorset-footer_color-bg2'             => '#1b79b7',
 
 			// Primary color
 			'colorset-footer_color-primary'         => '#ffffff',
 
 			// Highlight color
-			'colorset-footer_color-secondary'       => '#aaaaaa',
+			'colorset-footer_color-secondary'       => '#ffffff',
 
 			// Font color
-			'colorset-footer_color-color'           => '#dddddd',
+			'colorset-footer_color-color'           => '#ffffff',
 
 			// Secondary font color
-			'colorset-footer_color-meta'            => '#919191',
+			'colorset-footer_color-meta'            => '#ffffff',
 
 			// Heading color
-			'colorset-footer_color-heading'         => '#919191',
+			'colorset-footer_color-heading'         => '#ffffff',
 
 			// Border colors
-			'colorset-footer_color-border'          => '#444444', // $primary-color
+			'colorset-footer_color-border'          => '#1b79b7', // $primary-color
 
 			// Background image
 			'colorset-footer_color-img'             => '',
@@ -231,28 +231,28 @@ add_action('ava_after_main_container', 'after_head_image_func');
 			--------------------------------------*/
 
 			// Background color
-			'colorset-socket_color-bg'              => '#333333', // $primary-color-dark
+			'colorset-socket_color-bg'              => '#1b79b7', // $primary-color-dark
 
 			// Alternate background color
-			'colorset-socket_color-bg2'             => '#555555',
+			'colorset-socket_color-bg2'             => '#1b79b7',
 
 			// Primary color
 			'colorset-socket_color-primary'         => '#ffffff',
 
 			// Highlight color
-			'colorset-socket_color-secondary'       => '#aaaaaa',
+			'colorset-socket_color-secondary'       => '#ffffff',
 
 			// Font color
-			'colorset-socket_color-color'           => '#eeeeee',
+			'colorset-socket_color-color'           => '#ffffff',
 
 			// Secondary font color
-			'colorset-socket_color-meta'            => '#999999',
+			'colorset-socket_color-meta'            => '#ffffff',
 
 			// Heading color
 			'colorset-socket_color-heading'         => '#ffffff',
 
 			// Border color
-			'colorset-socket_color-border'          => '#444444', // $primary-color-dark
+			'colorset-socket_color-border'          => '#1b79b7', // $primary-color-dark
 
 			// Background image
 			'colorset-socket_color-img'             => '',
