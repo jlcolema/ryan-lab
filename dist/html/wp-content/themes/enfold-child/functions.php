@@ -301,59 +301,59 @@ add_action('ava_after_main_container', 'after_head_image_func');
 
 			// avia-style
 
-			wp_dequeue_style( 'avia-style' );
+			// wp_dequeue_style( 'avia-style' );
 
 			// wp_enqueue_style( 'avia-style-child', get_stylesheet_directory_uri().'/css/style.css', array(), '2', 'all' );
 
 			// avia-custom
 
-			wp_dequeue_style( 'avia-custom' );
+			// wp_dequeue_style( 'avia-custom' );
 
 			// wp_enqueue_style( 'avia-custom-child', get_stylesheet_directory_uri().'/css/custom.css', array(), '2', 'all' );
 
 			// avia-grid
 
-			wp_dequeue_style( 'avia-grid' );
+			// wp_dequeue_style( 'avia-grid' );
 
 			// wp_enqueue_style( 'avia-grid-child', get_stylesheet_directory_uri().'/css/grid.css', array(), '2', 'all' );
 
 			// avia-base
 
-			wp_dequeue_style( 'avia-base');
+			// wp_dequeue_style( 'avia-base');
 
 			// wp_enqueue_style( 'avia-base-child', get_stylesheet_directory_uri().'/css/base.css', array(), '2', 'all' );
 
 			// avia-layout
 
-			wp_dequeue_style( 'avia-layout' );
+			// wp_dequeue_style( 'avia-layout' );
 
 			// wp_enqueue_style( 'avia-layout-child', get_stylesheet_directory_uri().'/css/layout.css', array(), '2', 'all' );
 
 			// avia-scs
 
-			wp_dequeue_style( 'avia-scs' );
+			// wp_dequeue_style( 'avia-scs' );
 
 			// wp_enqueue_style( 'avia-scs-child', get_stylesheet_directory_uri().'/css/shortcodes.css', array(), '2', 'all' );
 
 			// avia-print
 
-			wp_dequeue_style( 'avia-print' );
+			// wp_dequeue_style( 'avia-print' );
 
-			wp_enqueue_style( 'avia-print-child', get_stylesheet_directory_uri() . '/assets/css/print.css', array(), '1', 'print' );
+			// wp_enqueue_style( 'avia-print-child', get_stylesheet_directory_uri() . '/assets/css/print.css', array(), '1', 'print' );
 
-			if ( is_rtl() ) {
+			// if ( is_rtl() ) {
 
 				// avia-rtl
 
-				wp_dequeue_style( 'avia-rtl' );
+				// wp_dequeue_style( 'avia-rtl' );
 
-				wp_enqueue_style( 'avia-rtl-child', get_stylesheet_directory_uri() . '/assets/css/rtl.css', array(), '1', 'all' );
+				// wp_enqueue_style( 'avia-rtl-child', get_stylesheet_directory_uri() . '/assets/css/rtl.css', array(), '1', 'all' );
 
-			}
+			// }
 
 			/* Pull in Dynamic Styles based on selections within control panel Enfold Child options */
 
-			wp_dequeue_style( 'avia-dynamic' );
+			// wp_dequeue_style( 'avia-dynamic' );
 
 			// global $avia;
 
