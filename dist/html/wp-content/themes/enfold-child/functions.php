@@ -293,7 +293,7 @@ add_action('ava_after_main_container', 'after_head_image_func');
 	// This pulls over the css directory from the parent
 	// Enfold theme to allow for easier editing.
 
-	function enfold_child_css() {
+	function enfold_custom_css() {
 
 		if ( ! is_admin() ) {
 
@@ -351,8 +351,25 @@ add_action('ava_after_main_container', 'after_head_image_func');
 
 			}
 
+			/* Pull in Dynamic Styles based on selections within control panel Enfold Child options */
+
+			wp_dequeue_style( 'avia-dynamic' );
+
+			// global $avia;
+
+			// $safe_name = avia_backend_safe_string($avia->base_data['prefix']);
+			// $safe_name = apply_filters('avf_dynamic_stylesheet_filename', $safe_name);
+
+			// $version_number = get_option('avia_stylesheet_dynamic_version'.$safe_name);
+
+			// if ( empty( $version_number ) ) $version_number = '1';
+
+			// $upload_directory = wp_upload_dir();
+
+			// wp_enqueue_style( 'avia-dynamic-child', $upload_directory['baseurl'] . '/dynamic_avia/enfold_child.css', array(), $version_number, 'all' );
+
 		}
 
 	}
 
-	add_action( 'wp_enqueue_scripts', 'enfold_child_css', 100 );
+	add_action( 'wp_enqueue_scripts', 'enfold_custom_css', 100 );
