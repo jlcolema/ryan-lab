@@ -7,68 +7,56 @@
 
 // Notes...
 
-// @import "common/normalize";
+@import "common/mixins";
 
 // Notes...
 
-// @import "common/mixins";
+@import "common/variables";
 
 // Notes...
 
-// @import "common/variables";
+@import "common/miscellaneous";
 
-// Notes...
-
-// @import "common/fonts";
-
-// Notes...
-
-// @import "common/baseline";
-
-// Notes...
-
-// @import "common/miscellaneous";
-
-// Components
+// Enfold
 // -------------------------------------
 
 // Notes...
 
-// @import "components/button";
+@import "enfold/grid";
+
+// Notes...
+
+@import "enfold/base";
+
+// Notes...
+
+@import "enfold/layout";
+
+// Notes...
+
+@import "enfold/shortcodes";
+
+// Notes...
+
+@import "enfold/dynamic";
 
 // Layouts
 // -------------------------------------
 
 // Notes...
 
-// @import "layouts/header";
+@import "layouts/header";
 
 // Notes...
 
-// @import "layouts/content";
+@import "layouts/content";
 
 // Notes...
 
-// @import "layouts/pre-footer";
-
-// Notes...
-
-// @import "layouts/footer";
+@import "layouts/footer";
 
 
-@import "enfold/grid";
-@import "enfold/base";
-@import "enfold/layout";
-@import "enfold/shortcodes";
 
-// style
-// custom
-// grid
-// base
-// layout
-// shortcodes
-// print
-// rtl
 
 
 /*Add your own styles here:*/
