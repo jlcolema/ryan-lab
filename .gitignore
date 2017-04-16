@@ -5,5 +5,4 @@ nodule_modules/
 dev/backup/
 dist/html/wp-content/uploads/
 node_modules/
-dist/html/wp-content/themes/enfold-child/style.css
 dist/html/wp-content/themes/enfold-child/assets/
