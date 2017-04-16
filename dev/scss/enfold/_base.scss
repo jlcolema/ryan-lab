@@ -38,23 +38,40 @@
 	table {
 		border-collapse: collapse;
 		border-spacing: 0; }
-    * { -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box; }
+    // * { -moz-box-sizing: border-box;
+        // -webkit-box-sizing: border-box;
+        // box-sizing: border-box; }
 
 /* #Basic Styles
 ================================================== */
 
-	html.responsive, .responsive body{
+	html.responsive,
+	.responsive body {
+
+		box-sizing: border-box;
+		-webkit-text-size-adjust: 100%;
+		-ms-text-size-adjust: 100%;
 		overflow-x: hidden;
 
 	}
 
+	*,
+	*:before,
+	*:after {
+
+		box-sizing: inherit;
+
+	}
+
 	body {
-		font: 13px/1.65em "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-		color: #444;
-		-webkit-text-size-adjust: 100%;
- }
+
+		font-size: 16px;
+		line-height: 1.625; // 26/16
+		font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		color: #000000;
+		background: $white;
+
+	}
 
 
 
@@ -71,68 +88,234 @@
 	.helvetica-neue-websave{font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;	}
 
 	/*default*/
+
 	h1, h2, h3, h4, h5, h6 {
-	/*	font-family: "Georgia", "Times New Roman", Helvetica, Arial, sans-serif; */
-		font-weight: 600; }
-	#top h1 a, #top h2 a, #top h3 a, #top h4 a, #top h5 a, #top h6 a { font-weight: inherit; text-decoration: none; color: inherit; }
-	#top h1 strong, #top h2 strong, #top h3 strong, #top h4 strong, #top h5 strong, #top h6 strong { color: inherit; }
-	h1 { font-size: 34px; line-height: 1.1em; margin-bottom: 14px;}
-	h2 { font-size: 28px; line-height: 1.1em; margin-bottom: 10px; }
-	h3 { font-size: 20px; line-height: 1.1em; margin-bottom: 8px; } /*28*/
-	h4 { font-size: 18px; line-height: 1.1em; margin-bottom: 4px; } /*21*/
-	h5 { font-size: 16px; line-height: 1.1em; }						/*17*/
-	h6 { font-size: 14px; line-height: 1.1em; }
 
-	 .flex_column h1 a:hover, .flex_column h2 a:hover, .flex_column h3 a:hover, .flex_column h4 a:hover, .flex_column h5 a:hover, .flex_column h6 a:hover{text-decoration: underline;}
+		// font-family: "Georgia", "Times New Roman", Helvetica, Arial, sans-serif;
+		// font-weight: 600;
 
-	p + h1, p + h2, p + h3, p + h4, p + h5, p + h6{
-	margin-top:1.5em;
 	}
 
-	p { margin: 0.85em 0; }
-	p img { margin: 0; }
-	p.lead { font-size: 21px; line-height: 27px;   }
+	#top h1 a,
+	#top h2 a,
+	#top h3 a,
+	#top h4 a,
+	#top h5 a,
+	#top h6 a {
 
-	em { font-style: italic; }
-	strong, b{ font-weight: bold;  }
-	small { font-size: 80%; }
+		font-weight: inherit;
+		text-decoration: none;
+		color: inherit;
 
-	hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 10px 0 30px; height: 0; }
+	}
+
+	#top h1 strong,
+	#top h2 strong,
+	#top h3 strong,
+	#top h4 strong,
+	#top h5 strong,
+	#top h6 strong {
+
+		color: inherit;
+
+	}
+
+	h1 {
+
+		margin: 1.277777778em 0;
+		font-size: 2.25rem;
+		line-height: 1.277777778;
+
+	}
+
+	h2 {
+
+		margin: 1.3125em 0;
+		font-size: 2rem;
+		line-height: 1.3125;
+
+	}
+
+	h3 {
+
+		margin: 1.357142857em 0;
+		font-size: 1.75rem;
+		line-height: 1.357142857;
+
+	}
+
+	h4 {
+
+		margin: 1.416666667em 0;
+		font-size: 1.5rem;
+		line-height: 1.416666667;
+
+	}
+
+	h5 {
+
+		margin: 1.5em 0;
+		font-size: 1.25rem;
+		line-height: 1.5;
+
+	}
+
+	h6 {
+
+		margin: 1.625em 0;
+		font-size: 1rem;
+		line-height: 1.625;
+
+	}
+
+	 .flex_column h1 a:hover,
+	 .flex_column h2 a:hover,
+	 .flex_column h3 a:hover,
+	 .flex_column h4 a:hover,
+	 .flex_column h5 a:hover,
+	 .flex_column h6 a:hover {
+
+	 	// text-decoration: underline;
+
+	 }
+
+	p + h1,
+	p + h2,
+	p + h3,
+	p + h4,
+	p + h5,
+	p + h6 {
+
+		// margin-top:1.5em;
+
+	}
+
+	p {
+
+		margin: 1.625em 0;
+
+	}
+
+	p img {
+
+		margin: 0;
+
+	}
+
+	p.lead {
+
+		margin: 1.5em 0;
+		font-size: 1.25rem;
+		line-height: 1.5;
+
+	}
+
+	em {
+
+		font-style: italic;
+
+	}
+
+	strong,
+	b {
+
+		font-weight: bold;
+
+	}
+
+	small {
+
+		font-size: 1rem;
+
+	}
+
+	hr {
+
+		border: solid #ddd;
+		border-width: 1px 0 0;
+		clear: both;
+		margin: 10px 0 30px;
+		height: 0;
+
+	}
 
 	/*	Blockquotes  */
 
-	blockquote{
-	border-left-style:solid;
-	border-left-width:7px;
-	padding-left:20px;
-	margin-bottom:1em;
-	margin-right:1em;
-	font-size: 1.235em;
-    line-height: 1.5em;
+	blockquote {
+
+		margin: 1.5em 0;
+		padding: 0 0 0 20px;
+		font-size: 1.25rem;
+		line-height: 1.5;
+		border-left-style: solid;
+		border-left-width: 5px;
+
 	}
 
-	blockquote small, blockquote cite, blockquote small a, blockquote cite a, blockquote a small, blockquote a cite{font-size: 12px;}
+	blockquote small,
+	blockquote cite,
+	blockquote small a,
+	blockquote cite a,
+	blockquote a small,
+	blockquote a cite {
 
-	mark{ background-color: transparent; color:inherit; }
+		// font-size: 12px;
+
+	}
+
+	mark {
+
+		background-color: transparent;
+		color:inherit;
+
+	}
 
 /* #Links
 ================================================== */
+
 	a { text-decoration: none; outline: 0; max-width:100%; max-width:none\9; }
+
 	a:hover, a:focus, a:visited { outline: 0; text-decoration: underline;}
+
 	p a, p a:visited { line-height: inherit; }
+
 	a.avianolink, .avianolink a{cursor: default;}
+
 	#top .avia_hidden_link_text{display: none;}
 
 
 /* #Lists
 ================================================== */
-	ul, ol { margin-bottom: 20px;  }
-	ul { list-style: none outside; margin-left: 7px;}
-	ol { list-style: decimal; margin-left: 15px; }
+
+	ul,
+	ol {
+
+		margin: 1.625em 0;
+
+	}
+
+	ul {
+
+		margin-left: 7px;
+		list-style: none outside;
+
+	}
+
+	ol {
+
+		margin-left: 10px;
+		list-style: decimal;
+
+	}
+
 	ol, ul.square, ul.circle, ul.disc { }
+
 	ul.square { list-style: square outside; }
+
 	ul.circle { list-style: circle outside; }
+
 	ul.disc, .entry-content-wrapper ul { list-style: disc outside; }
+
 	ul ul, ul ol,
 	ol ol, ol ul { margin: 4px 0 5px 30px;  }
 	ul ul li, ul ol li,
@@ -317,13 +500,9 @@ overflow:auto;
 padding:2em;
 line-height: 2em;
 font-size: 12px;
-background-image: -webkit-linear-gradient(rgba(0, 0, 0, .05) 50%, transparent 50%, transparent);
-background-image: -moz-linear-gradient(rgba(0, 0, 0, .05) 50%, transparent 50%, transparent);
 background-image: linear-gradient(rgba(0, 0, 0, .05) 50%, transparent 50%, transparent);
 background-size: 100% 4em;
 font-family: Monaco, "Andale Mono", "Courier New", Courier, monospace;
--webkit-transition: all ease-in-out 0.5s;
--moz-transition: all ease-in-out 0.5s;
 transition: all ease-in-out 0.5s;
 margin-bottom: 30px;
 position: relative;
