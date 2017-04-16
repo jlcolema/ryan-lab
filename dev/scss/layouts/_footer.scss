@@ -3,3 +3,57 @@
 --------------------------------------*/
 
 // Notes...
+
+#socket {
+
+	.container {}
+
+		.copyright {
+
+			a {
+
+				&:hover {}
+
+			}
+
+		}
+
+		.sub_menu_socket {
+
+			div {}
+
+				ul {}
+
+					li {}
+
+						a {
+
+							&:hover {}
+
+						}
+
+							.avia-bullet {}
+
+							.avia-menu-text {}
+
+							.avia-menu-fx {}
+
+								.avia-arrow-wrap {}
+
+									.avia-arrow {}
+
+					// Active page
+
+					.current-menu-item {
+
+						a {
+
+							&:hover {}
+
+						}
+
+					}
+
+		}
+
+}

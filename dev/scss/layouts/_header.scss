@@ -3,3 +3,113 @@
 --------------------------------------*/
 
 // Notes...
+
+#header {}
+
+	// Utility bar
+
+	#header_meta {
+
+		.container {}
+
+			.sub_menu {}
+
+				ul {}
+
+					li {}
+
+						a {
+
+							&:hover {}
+
+						}
+
+					// Active page
+
+					.current-menu-item {
+
+						a {
+
+							&:hover {}
+
+						}
+
+					}
+
+	}
+
+	// Main header content
+
+	#header_main {
+
+		.av-logo-container {
+
+			.inner-container {}
+
+				.logo {
+
+					a {
+
+						&:hover {}
+
+					}
+
+						img {}
+
+				}
+
+				#advanced_menu_toggle {
+
+					&:hover {}
+
+				}
+
+		}
+
+		#header_main_alternate {
+
+			.container {}
+
+				.main_menu {}
+
+					.avia-main-nav-wrap {}
+
+						ul {}
+
+							li {}
+
+								a {
+
+									&:hover {}
+
+								}
+
+									.avia-bullet {}
+
+									.avia-menu-text {}
+
+									.avia-menu-fx {}
+
+										.avia-arrow-wrap {}
+
+											.avia-arrow {}
+
+							// Active page
+
+							.current-menu-item {
+
+								a {
+
+									&:hover {}
+
+								}
+
+							}
+
+		}
+
+	}
+
+	// Header background
+
+	.header_bg {}

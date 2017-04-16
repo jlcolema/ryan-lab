@@ -7,33 +7,33 @@
 // Wrap
 // -------------------------------------
 
-// #wrap_all {}
+#wrap_all {}
 
 // Return to Top
 // -------------------------------------
 
-// #scroll-top-link {
+#scroll-top-link {
 
 // 	border: none;
 // 	background-color: $gray;
 // 	border-radius: 0;
 // 	opacitiy: 1;
 
-// 	.avia_hidden_link_text {
+	.avia_hidden_link_text {
 
 // 		color: $white;
 
-// 	}
+	}
 
-// 	&:hover {
+	&:hover {
 
 // 		color: $white;
 // 		background-color: darken($gray, 10%);
 // 		border: none;
 
-// 	}
+	}
 
-// }
+}
 
 // Developer Mode
 // -------------------------------------
