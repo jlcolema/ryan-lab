@@ -285,6 +285,7 @@
 					right: 0;
 					width: 100%;
 					max-width: 300px;
+					box-shadow: -1px 1px 3px rgba($black, 0.20);
 					z-index: 5;
 
 					div {}
@@ -302,7 +303,7 @@
 							font-size: 1.4rem !important;
 							line-height: 1.714285714 !important; // 24px, 24/14
 							font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-							background: $light-gray !important;
+							// background: $light-gray !important;
 
 							&::placeholder {
 
@@ -315,7 +316,7 @@
 
 					.ajax_search_response {
 
-						background: $gray;
+						background: lighten($blue, 50%);
 
 					}
 
