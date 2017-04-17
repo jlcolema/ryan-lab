@@ -10,17 +10,60 @@
 
 	#header_meta {
 
-		.container {}
+		min-height: 0;
+		margin: 0;
+		background: $light-gray;
 
-			.sub_menu {}
+		.container {
 
-				ul {}
+			min-height: 0;
 
-					li {}
+		}
+
+			.sub_menu {
+
+				position: static;
+				padding: 0;
+
+			}
+
+				ul {
+
+					float: none;
+
+				}
+
+					li {
+
+						padding: 0;
+						@include font-size(12);
+						line-height: 1.833333333;
+						// text-transform: uppercase;
+						border: none;
+
+						@include mobile {
+
+							padding: 0 !important;
+
+						}
+
+					}
 
 						a {
 
-							&:hover {}
+							display: block;
+							max-width: none;
+							height: 30px;
+							padding: 4px 10px 0 10px;
+							font-weight: normal;
+							text-decoration: none;
+							color: $dark-gray;
+
+							&:hover {
+
+								color: $blue !important;
+
+							}
 
 						}
 
@@ -29,6 +72,9 @@
 					.current-menu-item {
 
 						a {
+
+							color: $blue;
+							border-bottom: 2px solid $blue;
 
 							&:hover {}
 
@@ -42,6 +88,8 @@
 
 	#header_main {
 
+		background: $white;
+
 		.av-logo-container {
 
 			.inner-container {}
@@ -50,11 +98,20 @@
 
 					a {
 
+						display: block;
+						width: 330px;
+						height: 100px;
+						background: rgba($white, 0.35) url(assets/img/logo.svg);
+
 						&:hover {}
 
 					}
 
-						img {}
+						img {
+
+							display: none;
+
+						}
 
 				}
 
@@ -110,6 +167,32 @@
 
 	}
 
+	// Global Search
+
+	.global-search {
+
+		background: $white;
+
+		.container {}
+
+			.inner-container {}
+
+				form {
+
+					div {}
+
+				}
+
+					.button {}
+
+					#s {}
+
+	}
+
 	// Header background
 
-	.header_bg {}
+	.header_bg {
+
+		display: none;
+
+	}

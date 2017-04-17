@@ -297,7 +297,7 @@ add_action('ava_after_main_container', 'after_head_image_func');
 
 		if ( ! is_admin() ) {
 
-			wp_enqueue_style( 'avia-screen-child', get_stylesheet_directory_uri() . '/assets/css/screen.css', array(), '2', 'all' );
+			// wp_enqueue_style( 'avia-screen-child', get_stylesheet_directory_uri() . '/assets/css/screen.css', array(), '2', 'all' );
 
 			// avia-style
 
