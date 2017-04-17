@@ -6,15 +6,70 @@
 
 #advanced_menu_hide {
 
-	&:hover {}
+	top: 83px;
+	right: 7.5%;
+	width: 40px;
+	height: 40px;
+	// margin-top: -20px;
+	color: $white;
+	line-height: 40px;
+	background-color: darken($blue, 5%);
+	border: none;
+	border-radius: 0;
+
+	@media screen and (min-width: 460px) {
+
+		top: 103px;
+
+	}
+
+	&:hover {
+
+		background-color: darken($blue, 10%) !important;
+
+	}
 
 }
 
 #mobile-advanced {
 
-	li {}
+	padding: 130px 7.5%;
+	background: $blue;
+	border: none;
+	transform: none;
+
+	@media screen and (min-width: 460px) {
+
+		padding: 170px 7.5%;
+
+	}
+
+	li {
+
+		// font-family: "Open Sans";
+		font-weight: bold;
+		text-transform: uppercase;
+
+	}
 
 		a {
+
+			padding: 10px 15px;
+			color: $white;
+			border: none !important;
+			background-color: darken($blue, 5%);
+
+			&:before {
+
+				content: none !important;
+
+			}
+
+			&:hover {
+
+				background-color: darken($blue, 10%) !important;
+
+			}
 
 			&:hover {}
 
@@ -29,5 +84,17 @@
 				.avia-arrow-wrap {}
 
 					.avia-arrow {}
+
+	.current-menu-item {
+
+		a {
+
+			background-color: darken($blue, 10%) !important;
+
+			&:hover {}
+
+		}
+
+	}
 
 }

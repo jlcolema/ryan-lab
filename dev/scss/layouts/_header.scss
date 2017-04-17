@@ -4,7 +4,15 @@
 
 // Notes...
 
-#header {}
+#header {
+
+	@include mobile {
+
+		border-bottom: 1px solid $blue;
+
+	}
+
+}
 
 	// Utility bar
 
@@ -88,20 +96,53 @@
 
 	#header_main {
 
-		background: $white;
+		// Logo
 
 		.av-logo-container {
 
-			.inner-container {}
+			.inner-container {
+
+				position: relative;
+				height: 100px;
+
+				@media screen and (min-width: 460px) {
+
+					height: 140px;
+
+				}
+
+			}
 
 				.logo {
+
+					position: absolute;
+					left: -5px;
+					top: 50%;
+					margin: -30px 0 0 0;
+					z-index: 1;
+
+					@media screen and (min-width: 460px) {
+
+						left: -10px;
+						margin: -50px 0 0 0;
+
+					}
 
 					a {
 
 						display: block;
-						width: 330px;
-						height: 100px;
-						background: rgba($white, 0.35) url(assets/img/logo.svg);
+						width: 198px;
+						height: 60px;
+						background: url(assets/img/logo.svg);
+						background-size: 198px 60px;
+
+						@media screen and (min-width: 460px) {
+
+							width: 330px;
+							height: 100px;
+							background-size: 330px 100px;
+
+						}
 
 						&:hover {}
 
@@ -117,35 +158,89 @@
 
 				#advanced_menu_toggle {
 
+					width: 40px;
+					height: 40px;
+					margin: -20px 0 0 0;
+					line-height: 40px;
+					color: $white;
+					background: $blue;
+					border: none;
+					border-radius: 0;
+
 					&:hover {}
 
 				}
 
 		}
 
+		// Primary Navigation
+
 		#header_main_alternate {
+
+			background: $blue;
+			overflow: hidden;
 
 			.container {}
 
 				.main_menu {}
 
-					.avia-main-nav-wrap {}
+					.av-main-nav-wrap {}
 
-						ul {}
+						ul {
 
-							li {}
+							// position: relative;
+							// left: -20px;
+							width: 100%;
+							height: auto;
+							background: $blue;
+							box-shadow: 0 35px 35px darken($blue, 20%);
+							@include group;
 
-								a {
+						}
 
-									&:hover {}
+							li {
+
+								@include font-size(14);
+								line-height: 1.714285714;
+								text-align: center;
+
+								&:last-of-type {
+
+									border: none;
 
 								}
 
-									.avia-bullet {}
+							}
+
+								a {
+
+									height: 50px;
+									padding: 13px 20px 0 20px;
+									font-size: inherit;
+									line-height: inherit;
+									color: $white;
+
+									&:hover {
+
+										background: darken($blue, 3%);
+
+									}
+
+								}
+
+									.avia-bullet {
+
+										display: none;
+
+									}
 
 									.avia-menu-text {}
 
-									.avia-menu-fx {}
+									.avia-menu-fx {
+
+										display: none;
+
+									}
 
 										.avia-arrow-wrap {}
 
@@ -156,6 +251,8 @@
 							.current-menu-item {
 
 								a {
+
+									background: darken($blue, 5%);
 
 									&:hover {}
 
@@ -171,7 +268,11 @@
 
 	.global-search {
 
-		background: $white;
+		@include mobile {
+
+			display: none;
+
+		}
 
 		.container {}
 
@@ -179,13 +280,54 @@
 
 				form {
 
+					position: absolute;
+					top: -140px;
+					right: 0;
+					width: 100%;
+					max-width: 300px;
+					z-index: 5;
+
 					div {}
 
 				}
 
-					.button {}
+						.button {}
 
-					#s {}
+						#s {
+
+							height: 40px;
+							padding: 0 12px !important;
+							// @include font-size(14);
+							font-size: 14px !important;
+							font-size: 1.4rem !important;
+							line-height: 1.714285714 !important; // 24px, 24/14
+							font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+							background: $light-gray !important;
+
+							&::placeholder {
+
+								font-style: italic;
+								color: lighten($black, 65%);
+
+							}
+
+						}
+
+					.ajax_search_response {
+
+						background: $gray;
+
+					}
+
+						.ajax_search_entry {}
+
+							.ajax_search_image {}
+
+							.ajax_search_content {}
+
+								.ajax_search_title {}
+
+								.ajax_search_excerpt {}
 
 	}
 
