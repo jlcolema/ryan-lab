@@ -23,6 +23,12 @@
 
 	}
 
+	@media screen and (max-width: 899px) {
+
+		display: block;
+
+	}
+
 	&:hover {
 
 		background-color: darken($blue, 10%) !important;

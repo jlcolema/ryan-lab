@@ -167,6 +167,12 @@
 					border: none;
 					border-radius: 0;
 
+					@media screen and (max-width: 899px) {
+
+						display: block;
+
+					}
+
 					&:hover {}
 
 				}
@@ -179,6 +185,12 @@
 
 			background: $blue;
 			overflow: hidden;
+
+			@media screen and (max-width: 899px) {
+
+				display: none;
+
+			}
 
 			.container {}
 
@@ -268,7 +280,7 @@
 
 	.global-search {
 
-		@include mobile {
+		@media screen and (max-width: 899px) {
 
 			display: none;
 
