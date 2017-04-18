@@ -6,7 +6,7 @@
 
 #header {
 
-	@include mobile {
+	@media screen and (max-width: 899px) {
 
 		border-bottom: 1px solid $blue;
 
