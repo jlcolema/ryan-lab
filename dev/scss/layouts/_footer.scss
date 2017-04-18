@@ -6,25 +6,40 @@
 
 #socket {
 
-	.container {}
+	.container {
 
-		.copyright {
+		padding-top: 30px;
+		padding-bottom: 30px;
 
-			a {
-
-				&:hover {}
-
-			}
-
-		}
+	}
 
 		.sub_menu_socket {
 
+			float: none;
+			margin: 0 0 10px 0 !important;
+
 			div {}
 
-				ul {}
+				ul {
 
-					li {}
+					margin: 0;
+
+				}
+
+					li {
+
+						margin: 0 20px 10px 0;
+						padding: 0;
+						@include font-size(14);
+						line-height: 1.714285714;
+
+						&:last-of-type {
+
+							margin-right: 0;
+
+						}
+
+					}
 
 						a {
 
@@ -48,11 +63,27 @@
 
 						a {
 
+							text-decoration: underline;
+
 							&:hover {}
 
 						}
 
 					}
+
+		}
+
+		.copyright {
+
+			float: none;
+			@include font-size(12);
+			line-height: 1.833333333;
+
+			a {
+
+				&:hover {}
+
+			}
 
 		}
 
