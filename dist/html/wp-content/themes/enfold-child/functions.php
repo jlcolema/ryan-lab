@@ -373,3 +373,19 @@ add_action('ava_after_main_container', 'after_head_image_func');
 	}
 
 	add_action( 'wp_enqueue_scripts', 'enfold_custom_css', 100 );
+
+	/*------------------------------------*\
+	   Add Support for SVG
+	\*------------------------------------*/
+
+	// Notes...
+
+	function cc_mime_types($mimes) {
+
+		$mimes['svg'] = 'image/svg+xml';
+
+		return $mimes;
+
+	}
+
+	add_filter( 'upload_mimes', 'cc_mime_types' );
