@@ -46,3 +46,542 @@
 	}
 
 	// Everything else
+
+	// Layerslider
+
+	.avia-layerslider {
+
+		height: 300px !important;
+
+		@include desktop {
+
+			height: 400px !important;
+
+		}
+
+		.ls-wp-container {
+
+			width: 100% !important;
+			height: 100% !important;
+
+		}
+
+			.ls-inner {}
+
+				.ls-slide-transition-wrapper {
+
+					width: 100% !important;
+					height: 100% !important;
+
+					.ls-curtiles {
+
+						.ls-slide-transition-tile {
+
+							width: 100% !important;
+							height: 100% !important;
+
+						}
+
+							.ls-curtile {}
+
+								img {
+
+									position: absolute;
+									left: 50%;
+									width: auto !important;
+									height: 300px !important;
+									transform: translate(-50%, 0) !important;
+
+									@include desktop {
+
+										height: 400px !important;
+
+									}
+
+								}
+
+					}
+
+					.ls-nexttiles {
+
+						.ls-slide-transition-tile {
+
+							width: 100% !important;
+							height: 100% !important;
+
+						}
+
+							.ls-nexttile {}
+
+								img {
+
+									position: absolute;
+									left: 50%;
+									width: auto !important;
+									height: 300px !important;
+									transform: translate(-50%, 0) !important;
+
+									@include desktop {
+
+										height: 400px !important;
+
+									}
+
+								}
+
+					}
+
+				}
+
+				.ls-background-videos {}
+
+				.ls-slide-backgrounds {}
+
+					.ls-z {
+
+						width: 100% !important;
+						height: 100% !important;
+
+					}
+
+						.ls-bg-outer {
+
+							width: 100% !important;
+							height: 100% !important;
+
+						}
+
+							.ls-bg-wrap {}
+
+								img {
+
+									position: absolute;
+									left: 50%;
+									width: auto !important;
+									height: 300px !important;
+									transform: translate(-50%, 0) !important;
+
+									@include desktop {
+
+										height: 400px !important;
+
+									}
+
+								}
+
+	}
+
+	// Primary Content
+
+		// People
+
+		.avia-team-member {
+
+			.team-img-container {
+
+				border-radius: 0;
+
+				img {
+
+					border-radius: 0;
+
+				}
+
+			}
+
+			.team-member-name {
+
+				margin: 0;
+				@include font-size(20);
+				line-height: 1.5;
+				font-family: "Open Sans";
+				font-weight: bold;
+
+				center {}
+
+			}
+
+			.team-member-job-title {
+
+				margin-top: 0;
+				color: $dark-gray;
+
+				center {}
+
+			}
+
+			.team-member-affiliation {}
+
+		}
+
+		// Tomas Ryan
+
+		// Media
+
+		// Public Communications
+
+		// Funding
+
+		.avia-logo-element-container {
+
+			.avia-smallarrow-slider-heading {
+
+				display: none !important;
+
+			}
+
+			.avia-content-slider-inner {
+
+				overflow: visible !important;
+
+				.slide-entry-wrap {
+
+					display: flex;
+					justify-content: space-between;
+
+				}
+
+					.slide-entry {
+
+						width: calc(33.333333333% - 30px) !important;
+						padding: 0 !important;
+
+					}
+
+						a {
+
+							border-radius: 0;
+
+							&:hover {}
+
+						}
+
+							img {
+
+								border-radius: 0;
+								box-shadow: none !important;
+
+							}
+
+			}
+
+		}
+
+		.avia-tooltip {
+
+			display: none !important;
+
+		}
+
+		// Media, Public Communications, Papers
+
+		.template-blog {
+
+			@include group;
+
+			article {
+
+				margin: 0 0 50px 0;
+				padding: 0 0 50px 0;
+				border-bottom: 1px solid $gray;
+
+				&:last-of-type {
+
+					margin: 0;
+					padding: 0;
+					border: none;
+
+				}
+
+			}
+
+				.blog-meta {
+
+					a {
+
+						margin: 0;
+						border-radius: 0;
+
+						&:hover {}
+
+					}
+
+						img {
+
+							border-radius: 0;
+
+						}
+
+				}
+
+				.entry-content-wrapper {}
+
+					.entry-content-header {}
+
+						.post-title {
+
+							margin: 0;
+
+							a {
+
+								&:hover {
+
+									color: $blue !important;
+
+								}
+
+							}
+
+								.post-format-icon {}
+
+						}
+
+						.post-meta-infos {}
+
+					.entry-content {
+
+						color: $dark-gray;
+
+						p {
+
+							&:first-of-type {
+
+								margin-top: 0;
+
+							}
+
+							&:last-of-type {
+
+								margin-bottom: 0;
+
+							}
+
+						}
+
+						.paper-author {
+
+							margin: 15px 0 0 0;
+
+							p {}
+
+						}
+
+						.paper-publication {
+
+							margin: 15px 0 0 0;
+
+							p {}
+
+						}
+
+						.paper-pdf {
+
+							margin: 20px 0 0 0;
+
+							a {
+
+								display: inline-block;
+								padding: 3px 10px;
+								color: $white;
+								background: $blue;
+								text-decoration: none;
+
+								&:hover {
+
+									background: darken($blue, 5%);
+
+								}
+
+							}
+
+						}
+
+					}
+
+					.entry-footer {}
+
+					.post_delimiter {
+
+						display: none;
+
+					}
+
+				.post_author_timeline {
+
+					display: none;
+
+				}
+
+		}
+
+		// Joining the Lab
+
+		.avia-slideshow {}
+
+		.tabcontainer {
+
+			.tab_titles {
+
+				border-bottom: 1px solid $gray;
+				@include group;
+
+				.tab {
+
+					margin: 0 5px 0 0;
+					border-color: $gray;
+					border-radius: 0 !important;
+
+					&:last-of-type {
+
+						margin: 0;
+
+					}
+
+				}
+
+				.active {}
+
+			}
+
+			.av_tab_section {}
+
+				.tab_content {
+
+					padding: 0;
+
+				}
+
+					.tab_inner_content {
+
+						padding: 0;
+
+					}
+
+		}
+
+		// Contact
+
+		.avia_ajax_form {
+
+			fieldset {}
+
+				h3 {
+
+					display: none;
+
+				}
+
+				p {}
+
+					label {}
+
+					input[type="text"] {
+
+						font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+						border: 1px solid $gray !important;
+						box-sizing: border-box;
+
+					}
+
+					textarea {
+
+						font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+						border: 1px solid $gray !important;
+						box-sizing: border-box;
+
+					}
+
+					.button {
+
+						font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+						font-weight: bold;
+
+						&:focus,
+						&:hover {
+
+							background: darken($blue, 5%) !important;
+
+						}
+
+					}
+
+		}
+
+	// Secondary Content
+
+	.sidebar {
+
+		@include mobile {
+
+			display: block !important;
+			padding-top: 0;
+
+		}
+
+		.inner_sidebar {
+
+			margin: 0;
+			padding: 30px;
+			background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23a1a1a1' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+
+		}
+
+			.widget {
+
+				padding: 0;
+
+			}
+
+				.widgettitle {
+
+					margin-top: 0;
+					// color: $gold;
+					font-weight: normal;
+
+				}
+
+				.seperator {}
+
+			.widget_text {
+
+				.widgettitle {}
+
+				.textwidget {
+
+					@include font-size(14);
+					line-height: 1.714285714;
+
+					strong {}
+
+				}
+
+				.seperator {}
+
+			}
+
+	}
+
+	// Miscellaneous
+
+	.av-special-heading {
+
+		// background: pink;
+
+		.av-special-heading-tag {
+
+			@include font-size(20);
+			// color: $blue;
+
+		}
+
+		.special-heading-border {}
+
+			.special-heading-inner-border {
+
+				border-color: $dark-gray;
+
+			}
+
+	}
+
+	// Affiliations
