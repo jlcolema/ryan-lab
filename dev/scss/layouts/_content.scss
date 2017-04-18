@@ -135,7 +135,7 @@
 
 				.ls-background-videos {}
 
-				.ls-slide-backgrounds {}
+				.ls-slide-backgrounds {
 
 					.ls-z {
 
@@ -168,6 +168,16 @@
 									}
 
 								}
+
+				}
+
+				.ls-layers {
+
+					.ls-z {}
+
+						.ls-in-out {}
+
+				}
 
 	}
 
@@ -222,54 +232,66 @@
 
 		// Funding
 
-		.avia-logo-element-container {
+		.page-id-22 {
 
-			.avia-smallarrow-slider-heading {
+			.avia-logo-element-container {
+
+				.avia-smallarrow-slider-heading {
+
+					display: none !important;
+
+				}
+
+				.avia-content-slider-inner {
+
+					overflow: visible !important;
+
+					.slide-entry-wrap {
+
+						display: flex;
+						flex-wrap: wrap;
+						justify-content: space-between;
+
+					}
+
+						.slide-entry {
+
+							width: calc(50% - 10px) !important;
+							margin: 0 0 20px 0 !important;
+							padding: 0 !important;
+
+							@media screen and (min-width: 500px) {
+
+								width: calc(33.333333333% - 30px) !important;
+
+							}
+
+						}
+
+							a {
+
+								border-radius: 0;
+
+								&:hover {}
+
+							}
+
+								img {
+
+									border-radius: 0;
+									box-shadow: none !important;
+
+								}
+
+				}
+
+			}
+
+			.avia-tooltip {
 
 				display: none !important;
 
 			}
-
-			.avia-content-slider-inner {
-
-				overflow: visible !important;
-
-				.slide-entry-wrap {
-
-					display: flex;
-					justify-content: space-between;
-
-				}
-
-					.slide-entry {
-
-						width: calc(33.333333333% - 30px) !important;
-						padding: 0 !important;
-
-					}
-
-						a {
-
-							border-radius: 0;
-
-							&:hover {}
-
-						}
-
-							img {
-
-								border-radius: 0;
-								box-shadow: none !important;
-
-							}
-
-			}
-
-		}
-
-		.avia-tooltip {
-
-			display: none !important;
 
 		}
 
@@ -585,3 +607,81 @@
 	}
 
 	// Affiliations
+
+	.home {
+
+		.avia-logo-element-container {
+
+			.avia-smallarrow-slider-heading {
+
+				display: none !important;
+
+			}
+
+			.avia-content-slider-inner {
+
+				overflow: visible !important;
+
+				.slide-entry-wrap {
+
+					@media screen and (min-width: 360px) {
+
+						display: flex;
+						flex-wrap: wrap;
+						justify-content: space-between;
+
+					}
+
+				}
+
+					.slide-entry {
+
+						width: 100% !important;
+						padding: 0 !important;
+
+						@media screen and (min-width: 360px) {
+
+							width: calc(50% - 10px) !important;
+
+						}
+
+						@include mobile {
+
+							margin: 0 0 20px 0 !important;
+
+						}
+
+						@media screen and (min-width: 700px) {
+
+							width: calc(25% - 10px) !important;
+
+						}
+
+					}
+
+						a {
+
+							border-radius: 0;
+
+							&:hover {}
+
+						}
+
+							img {
+
+								border-radius: 0;
+								box-shadow: none !important;
+
+							}
+
+			}
+
+		}
+
+		.avia-tooltip {
+
+			display: none !important;
+
+		}
+
+	}
