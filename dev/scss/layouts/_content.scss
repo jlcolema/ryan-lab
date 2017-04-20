@@ -173,9 +173,65 @@
 
 				.ls-layers {
 
-					.ls-z {}
+					.ls-z {
 
-						.ls-in-out {}
+						// position: relative !important;
+						width: 100% !important;
+						// max-width: 1130px !important;
+						height: 100% !important;
+						// margin: 0 auto !important;
+						// padding: 0 7.5% !important;
+						// box-sizing: border-box !important;
+
+						@include desktop {
+
+							// padding: 0 50px !important;
+
+						}
+
+					}
+
+						.ls-in-out {
+
+							position: relative !important;
+							width: 100% !important;
+							max-width: 1130px !important;
+							height: 100% !important;
+							left: 0 !important;
+							top: 0 !important;
+							margin: 0 auto !important;
+							padding: 0 7.5% !important;
+							box-sizing: border-box !important;
+
+							@include desktop {
+
+								padding: 0 50px !important;
+
+							}
+
+						}
+
+							.ls-layer {
+
+								position: absolute !important;
+								left: 7.5% !important;
+								top: auto !important;
+								bottom: 20px;
+								width: auto !important;
+								padding: 3px 10px 5px 10px !important;
+								font-size: 14px !important;
+								line-height: 1.714285714 !important;
+								font-style: italic !important;
+								color: $black;
+								background: rgba($white, 0.90);
+
+								@include desktop {
+
+									left: 50px !important;
+
+								}
+
+							}
 
 				}
 
