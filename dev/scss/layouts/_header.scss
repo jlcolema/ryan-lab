@@ -276,9 +276,40 @@
 
 	}
 
+	// Ryan Lab
+
+	.ryan-lab {
+
+		@media screen and (max-width: 899px) {
+
+			display: none;
+
+		}
+
+		.container {}
+
+			.inner-container {}
+
+				.ryan-lab-title {
+
+					position: absolute;
+					top: -138px;
+					right: 0;
+					@include font-size(24);
+					line-height: 1.416666667;
+					font-family: "Merriweather";
+					color: $dark-gray;
+					z-index: 5;
+
+				}
+
+	}
+
 	// Global Search
 
 	.global-search {
+
+		display: none;
 
 		@media screen and (max-width: 899px) {
 

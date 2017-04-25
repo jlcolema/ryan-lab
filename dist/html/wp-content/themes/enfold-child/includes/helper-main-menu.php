@@ -246,6 +246,22 @@
 
 	</div>
 
+	<div class="ryan-lab">
+
+		<div class="container">
+
+			<div class="inner-container">
+
+				<div class="ryan-lab-title"><?php bloginfo( 'name' ); ?></div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<?php /*
+
 	<div id="menu-item-search" class="global-search">
 
 		<div class="container">
@@ -269,6 +285,8 @@
 		</div>
 
     </div>
+
+	*/ ?>
 
 	<div class='header_bg'></div>
 
