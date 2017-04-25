@@ -484,6 +484,28 @@
 
 					.entry-footer {}
 
+						.av-share-box {
+
+							margin-bottom: 0;
+
+							.av-share-link-description {}
+
+							.av-share-box-list {
+
+								background: purple;
+								border-color: $gray;
+								border-radius: 0 !important;
+
+								li {
+
+									border-color: $gray;
+
+								}
+
+							}
+
+						}
+
 					.post_delimiter {
 
 						display: none;
