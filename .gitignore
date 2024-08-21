@@ -8,3 +8,10 @@ node_modules/
 dist/html/wp-content/themes/enfold-child/assets/
 dist/html/wp-content/themes/enfold-child/style.css
 dev/documents/
+
+# Miscellaneous
+
+wp-config*
+*.code-workspace
+*.nova
+organize/
